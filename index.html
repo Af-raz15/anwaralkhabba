@@ -1,36 +1,148 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anwar Al Khabba</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #34495e;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #2c3e50;
+    }
+    .checkout-form input, .checkout-form textarea, .checkout-form select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .checkout-form button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1><img src="images/logo.png" alt="Logo" class="logo" /> Anwar Al Khabba</h1>
+    <h1>Anwar Al Khabba</h1>
+    <p>Elegant Abayas | Custom Orders | Affordable Prices</p>
   </header>
 
-  <main>
-    <section class="products">
-      <h2>Abaya Collection</h2>
-      <div class="product-grid">
-        <div class="product">
-          <img src="images/abaya1.jpg" alt="Abaya 1" />
-          <h3>Elegant Black Abaya</h3>
-          <p>Price: 20 OMR</p>
-          <a href="https://wa.me/96897032151?text=I'm interested in Elegant Black Abaya" class="whatsapp">Order via WhatsApp</a>
-        </div>
-        <div class="product">
-          <img src="images/abaya2.jpg" alt="Abaya 2" />
-          <h3>Modern Gray Abaya</h3>
-          <p>Price: 22 OMR</p>
-          <a href="https://wa.me/96897032151?text=I'm interested in Modern Gray Abaya" class="whatsapp">Order via WhatsApp</a>
-        </div>
+  <nav>
+    <a href="#shop">Shop</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="shop">
+    <h2>Our Abayas</h2>
+    <p>We offer a wide variety of abayas for daily wear, occasions, and custom styles.  
+    You can browse and order directly using the form below!</p>
+    
+    <ul>
+      <li>🖤 Black Classic Abaya – 10 OMR</li>
+      <li>🤍 White Occasion Abaya – 15 OMR</li>
+      <li>💜 Custom Color Abayas – On Order</li>
+    </ul>
+    
+    <!-- Abaya images -->
+    <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 20px;">
+      <div style="text-align: center;">
+        <img src="https://i.imgur.com/8IhHprF.jpg" alt="Black Classic Abaya" style="width: 200px; border-radius: 8px;">
+        <p>Black Classic Abaya</p>
       </div>
-    </section>
-  </main>
+      <div style="text-align: center;">
+        <img src="https://i.imgur.com/Y9Ll6fN.jpg" alt="White Occasion Abaya" style="width: 200px; border-radius: 8px;">
+        <p>White Occasion Abaya</p>
+      </div>
+      <div style="text-align: center;">
+        <img src="https://i.imgur.com/pLVfcIj.jpg" alt="Custom Color Abaya" style="width: 200px; border-radius: 8px;">
+        <p>Custom Color Abaya</p>
+      </div>
+    </div>
+
+    <!-- Checkout button -->
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="#order" style="
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        cursor: pointer;
+      ">Checkout Now</a>
+    </div>
+  </section>
+
+  <section id="order">
+    <h2>Place Your Order</h2>
+    <p>Click the button below to fill out your order, upload pictures for custom abayas, and send it securely via Google Forms.</p>
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="https://forms.gle/BK91eHACwER2MieaA" target="_blank" style="
+        background-color: #2c3e50;
+        color: white;
+        padding: 15px 40px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        font-size: 18px;
+        display: inline-block;
+        cursor: pointer;
+      ">Order via Google Form</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:afrazam2000@gmail.com">afrazam2000@gmail.com</a><br>
+    WhatsApp: +968-XXXXXXX<br>
+    Instagram: @anwaralkhabba</p>
+  </section>
 
   <footer>
     <p>&copy; 2025 Anwar Al Khabba. All rights reserved.</p>
